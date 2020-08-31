@@ -10,6 +10,5 @@ ENV FLASK_APP=main.py
 ENV FLASK_DEBUG=1
 ENV FLASK_RUN_PORT=80
 RUN flask init-db
-#EXPOSE 5000
 ENTRYPOINT ["python"]
 CMD ["main.py"]
