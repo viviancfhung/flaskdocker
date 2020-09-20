@@ -8,7 +8,7 @@ COPY ./app /app
 WORKDIR /app
 ENV FLASK_APP=main.py
 ENV FLASK_DEBUG=1
-ENV FLASK_RUN_PORT=80
+#ENV FLASK_RUN_PORT=80
 RUN flask init-db
 ENTRYPOINT ["python"]
 CMD ["main.py"]
